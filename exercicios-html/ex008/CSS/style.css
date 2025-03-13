@@ -1,0 +1,42 @@
+
+
+h1{
+    animation: alerta 3s infinite alternate-reverse;
+}
+
+img{
+  animation: flutuar 2s alternate-reverse infinite linear; 
+}
+
+@keyframes alerta {
+    0%{
+    color: #000;
+    }
+
+    50%{
+        color: blue;
+    }
+
+    100%{
+          color: red;
+    }
+}
+
+@keyframes flutuar {
+    25%{
+       transform: translateY(-10px) rotate(10deg);
+    }
+/* 
+    25%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(20px);
+    }
+ */
+    100%{
+        transform: translateY(10px)rotate(-2deg);
+        border-radius: 100px;
+    }
+}

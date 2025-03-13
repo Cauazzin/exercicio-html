@@ -1,0 +1,9 @@
+h1{
+    animation: transition-title 1s linear;
+}
+
+@keyframes transition-title {
+    0%{
+        transform: translateY(-100px);
+    }
+}

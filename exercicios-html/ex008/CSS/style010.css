@@ -1,0 +1,25 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;    
+}
+
+.loading {
+    width: 200px;
+    height: 200px;
+    border: 20px solid #bebec3;
+    border-radius: 50%;
+    border-top: 20px solid #4143eb;
+    animation: carregando 2s infinite ease-in-out;
+}
+@keyframes carregando {
+    0%{
+      transform: rotate(-360deg);
+    }
+}
