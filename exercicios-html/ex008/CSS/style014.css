@@ -1,0 +1,36 @@
+.container{
+    width: 400px;
+    height: 400px;
+    background: yellow;
+    position: relative;
+
+    & div{
+        width: 100px;
+        height: 100px;
+        position: absolute;
+
+        right: 0;
+        bottom: 0;
+    }
+
+        & .blue{
+            background-color: blue;
+            right: 10px;
+            bottom: 10px;
+            z-index: 2;
+        }
+
+        & .black{
+            background-color: black;
+            right: 20px;
+            bottom: 20px;
+            z-index: 3;
+        }
+
+        & .red{
+            background-color: red;
+            z-index: 1;
+            right: 30px;
+            bottom: 30;
+        }
+}
